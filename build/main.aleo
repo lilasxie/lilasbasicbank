@@ -561,3 +561,11 @@ finalize withdraw:
     get.or_use balances[r0] 0u64 into r2;
     sub r2 r1 into r3;
     set r3 into balances[r0];
+
+
+function estimate:
+    input r0 as u64.private;
+    input r1 as u64.private;
+    input r2 as u64.private;
+    call calculate_interest r0 r1 r2 into r3;
+    output r3 as u64.private;

@@ -79,6 +79,15 @@ program lilasbasicbank.aleo {
         Mapping::set(balances, hash, current_amount - amount);
     }
 
+    // Returns estimate amount.
+    // - `amount`   : The amount of tokens to withdraw.
+    // - `rate`     : The compound interest rate.
+    // - `periods`  : The number of periods to compound the interest over.
+    transition estimate(amount: u64, rate: u64, periods: u64) -> u64 {
+        let total: u64 = calculate_interest(amount, rate, periods);
+        return total;
+    }
+
     // Returns the total amount of tokens after compounding interest.
     // - `principal`: The amount of tokens to compound interest over.
     // - `rate`     : The compound interest rate.
