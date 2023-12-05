@@ -26,6 +26,10 @@ leo run deposit "{owner: aleo185hj0yknz535yx83pntc9wzpx5xcf5u7mjplyrygs8m7efh0cu
 ```
 record the outputs
 
+### estimate
+```shell
+leo run estimate 500000u64 300u64 80u64
+
 ### withdraw
 ```shell
 leo run withdraw aleo185hj0yknz535yx83pntc9wzpx5xcf5u7mjplyrygs8m7efh0curqke78z0 500000u64 300u64 80u64
