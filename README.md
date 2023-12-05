@@ -29,6 +29,7 @@ record the outputs
 ### estimate
 ```shell
 leo run estimate 500000u64 300u64 80u64
+```
 
 ### withdraw
 ```shell
